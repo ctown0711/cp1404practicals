@@ -46,3 +46,4 @@ for i in range(0, 151, 50):
     print(f"{i:3}")
 
 # is it possible to format with a variable here in case 151 was 4 or more digits
+# convert to string like len(str(151)) ?
