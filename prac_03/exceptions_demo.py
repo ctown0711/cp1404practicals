@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 - Practical
 Answer the following questions:
-1. When will a ValueError occur?
-2. When will a ZeroDivisionError occur?
+1. When will a ValueError occur? When an input that isn't an integer is entered (1.5, abc)
+2. When will a ZeroDivisionError occur? When a user tries to divide by (denominator) Zero
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
 
