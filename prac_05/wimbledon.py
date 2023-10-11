@@ -17,7 +17,7 @@ def main():
 def extract_data(filename):
     """Extract data from input file"""
     with open(filename, 'r', encoding="utf-8-sig") as in_file:
-        in_file.readline()
+        in_file.readline()  # Remove data structure line
         lines = [line.split(',') for line in in_file]
         return lines
 
