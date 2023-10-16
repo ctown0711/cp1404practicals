@@ -5,6 +5,8 @@ Actual: 31 minutes
 """
 
 FILENAME = "wimbledon.csv"
+WINNING_COUNTRY_INDEX = 1
+WINNING_PLAYER_INDEX = 2
 
 
 def main():
@@ -24,14 +26,14 @@ def extract_data(filename):
 
 def extract_player_country_results(lines):
     """Extract set of winning players countries, and dictionary of winners names and number of wins"""
-    yearly_winning_players = [line[2] for line in lines]
+    yearly_winning_players = [line[WINNING_PLAYER_INDEX] for line in lines]
     player_to_wins = {}
     for player in yearly_winning_players:
         try:
             player_to_wins[player] = player_to_wins[player] + 1
         except KeyError:
             player_to_wins[player] = 1
-    winning_countries = sorted({line[1] for line in lines})
+    winning_countries = sorted({line[WINNING_COUNTRY_INDEX] for line in lines})
     return player_to_wins, winning_countries
 
 
