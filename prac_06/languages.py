@@ -17,5 +17,3 @@ print("The dynamically typed languages are:")
 for programming_language in programming_languages:
     if programming_language.is_dynamic():
         print(programming_language.name)
-
-
