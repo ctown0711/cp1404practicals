@@ -6,6 +6,7 @@ Actual: 29 minutes
 
 
 class ProgrammingLanguage:
+    """Programming Language class"""
 
     def __init__(self, name="", typing="", reflection="", year=0):
         """Initialise a ProgrammingLanguage object."""
@@ -20,4 +21,4 @@ class ProgrammingLanguage:
 
     def is_dynamic(self):
         """Determine if language is dynamically typed."""
-        return self.reflection
+        return self.typing == "Dynamic"

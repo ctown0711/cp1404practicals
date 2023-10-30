@@ -13,13 +13,15 @@ name = input("Name: ")
 while name != "":
     year = int(input("Year: "))
     cost = float(input("Cost: $"))
-    guitars.append(Guitar(name, year, cost))
-    print(f"{name} ({year}) : ${cost} added.")
+    guitar = Guitar(name, year, cost)
+    guitars.append(guitar)
+    print(f"{guitar} added.")
     name = input("Name: ")
 print("These are my guitars:")
-format_name = max(len(name) for guitar in guitars)
+name_format_width = max(len(guitar.name) for guitar in guitars)
 for i, guitar in enumerate(guitars, 1):
     vintage_string = ""
     if guitar.is_vintage():
         vintage_string = " (vintage)"
-    print(f"Guitar {i}: {guitar.name:{format_name}} ({guitar.year}), worth ${guitar.cost:10,.2f}{vintage_string}")
+    print(
+        f"Guitar {i}: {guitar.name:>{name_format_width}} ({guitar.year}), worth ${guitar.cost:10,.2f}{vintage_string}")
