@@ -8,7 +8,7 @@ Actual: 29 minutes
 class ProgrammingLanguage:
     """Programming Language class"""
 
-    def __init__(self, name="", typing="", reflection="", year=0):
+    def __init__(self, name="", typing="", reflection=False, year=0):
         """Initialise a ProgrammingLanguage object."""
         self.name = name
         self.typing = typing
