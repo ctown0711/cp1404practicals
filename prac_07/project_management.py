@@ -46,14 +46,28 @@ while menu_choice != "Q":
     elif menu_choice == "D":
         print("Incomplete projects: ")
         for project in project if project.completion_percent != 100
-        print("Completed Projects: ")
+            print("Completed Projects: ")
         for project in project if project.completion_percent == 100
     elif menu_choice == "F":
 
     elif menu_choice == "A":
 
     elif menu_choice == "U":
-
-    else:
-        "Please enter a valid input"
+        for i, project in enumerate(projects):
+            print(f"{i} {project}")
+        update_program_choice = int(input("Project choice: "))
+        while update_program_choice < 0 or update_program_choice > len(projects) - 1:
+            print("Invalid index")
+            update_program_choice = int(input("Project choice: "))
+        print(projects[update_program_choice])
+        new_percentage = int(input("New Percentage: "))
+        while new_percentage < 0 or new_percentage > 100:
+            print("Must be between 0 and 100")
+            new_percentage = int(input("New Percentage: "))
+        new_priority = int(input("New Priority: "))
+        while new_priority < 1 or new_priority > 10:
+            print("Must be between 1 and 10")
+            new_priority = int(input("New Priority: "))
+        projects[update_program_choice].completion_percent = new_percentage
+        projects[update_program_choice].priority = new_priority
     print(MENU)
