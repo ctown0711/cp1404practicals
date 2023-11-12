@@ -5,8 +5,10 @@ from random import randint
 
 
 class DynamicLabels(App):
+    """Kivy app to demo dynamic label creation."""
 
     def __init__(self):
+        """Construct main app."""
         super().__init__()
         self.names = ['Caleb', 'Alebc', 'Lebca', 'Ebcal', 'Bcale']
 
