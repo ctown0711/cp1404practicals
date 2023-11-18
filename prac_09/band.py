@@ -1,7 +1,9 @@
 """Band Class"""
 
+
 class Band:
     """Band class"""
+
     def __init__(self, name=""):
         """Initialise band object"""
         self.name = name
