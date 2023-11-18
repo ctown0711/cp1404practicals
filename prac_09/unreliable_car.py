@@ -19,4 +19,3 @@ class UnreliableCar(Car):
         if randint(0, 100) >= self.reliability:
             distance = 0
         return super().drive(distance)
-
