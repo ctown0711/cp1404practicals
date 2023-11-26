@@ -3,7 +3,7 @@ import wikipedia
 search_prompt = input("Search for a page: ")
 while search_prompt != '':
     try:
-        page = wikipedia.page(search_prompt)
+        page = wikipedia.page(search_prompt, auto_suggest=False)
         print(page.title)
         print(page.summary)
         print(page.url)
