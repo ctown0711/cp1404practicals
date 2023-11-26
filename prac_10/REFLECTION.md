@@ -25,5 +25,5 @@ the programs, especially the walkthrough examples in the practicals I believe it
 lecture videos. The only thing I would maybe change is the kivydemos or the lectures to include the GUI functionality
 of just removing and re-adding widgets to dynamically update the GUI. Unless it's already in the demos and I missed it.
 
-[Prac 5](https://github.com/IestynTownsend/Iestyn_Townsend_CP1404/pull/1)
-[Prac 7](https://github.com/E-Hunter1632/cp1404practicals/pull/4#event-10906883642)
+[Prac 5 Review](https://github.com/IestynTownsend/Iestyn_Townsend_CP1404/pull/1)
+[Prac 7 Review](https://github.com/E-Hunter1632/cp1404practicals/pull/4#event-10906883642)
